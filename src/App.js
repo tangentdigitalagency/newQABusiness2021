@@ -29,8 +29,8 @@ class App extends Component {
 		routes: ['/step1', '/step2', '/step3', '/step4', '/step5', '/step6', '/step7', '/step8', '/thank-you-commercial'],
 		postData: {
 			//extra entries
-			lp_campaign_id: '5fe10f48a0ba0',
-			lp_campaign_key: 'vfB6nWKXFx9L3jPyZc7t',
+			lp_campaign_id: '603456261cc2a',
+			lp_campaign_key: 'XvV3P4yGnNRzpwQxFtCM',
 			lp_s1: '12',
 			lp_s2: '13',
 			gclid: '',
@@ -40,7 +40,7 @@ class App extends Component {
 			trusted_form_cert_id: '',
 			jornaya_lead_id: '',
 			// Redirect_URL: "",
-			Landing_Page: 'business.quotehound.com',
+			Landing_Page: 'business.quantumassurance.com',
 			IP_Address: '',
 			//s1 form fields
 			first_name: '',
@@ -174,25 +174,26 @@ class App extends Component {
 					<div className='container'>
 						<img
 							// @ts-ignore
-							src={require('./Assets/logo.png')}
+							src={require('./Assets/logoq.png')}
 							className='m-4'
 							width='200px'
 							alt=''
 						/>
 						<ul className='nav nav-fill '>
 							<li className='nav-item'>
-								<Button
-									type='primary'
-									size='middle'
-									icon={
-										<PhoneOutlined
-											// @ts-ignore
-											rotate='90'
-										/>
-									}
-									href={'tel:+18554344762'}>
-									(855) 434-4762
-								</Button>
+							<Button
+                  type="primary"
+                  size="large"
+                  icon={
+                    <PhoneOutlined
+                      rotate="90"
+                      style={{ verticalAlign: "initial" }}
+                    />
+                  }
+                  href="tel:(855) 204-5980"
+                >
+                  (855) 204-5980
+                </Button>
 							</li>
 						</ul>
 					</div>
