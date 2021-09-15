@@ -9,6 +9,11 @@ class S2EmailAndPhoneNumber extends Component {
 
 	onFinish = (values) => {
 		this.simplePhone(values.phone_home);
+
+		let phone = document.getElementById('phoneNumber').value;
+
+		document.getElementById('tele').value = phone;
+		
 		this.props.setBusinessEmail(values.email_address);
 		console.log('Success:', values);
 		this.props.history.push('/step3');
@@ -80,7 +85,8 @@ class S2EmailAndPhoneNumber extends Component {
 									type='text'
 									maxLength='14'
 									size='large'
-									placeholder='1234567890'
+									placeholder='1234567890',
+									id='phoneNumber'
 								/>
 							</Form.Item>
 							<h5>Email</h5>
